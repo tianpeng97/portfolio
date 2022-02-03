@@ -1,0 +1,79 @@
+/* .flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+} */
+
+@font-face {
+  font-family: Cascadia;
+  src: url(../fonts/CascadiaCode-Regular.otf);
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+hr,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  max-width: 280px;
+  background-image: url(../img/sidebar-bg.jpg);
+  background-size: 450px;
+}
+
+.cascadia {
+  font-family: Cascadia;
+}
+
+.text-3xl {
+  font-size: 3rem;
+}
+
+.title-border {
+  display: block;
+
+  border-width: 4px;
+  border-color: cadetblue;
+}
+
+.skill-border {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #c7c7c7;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.lg\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
